@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <title>Pessoal</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Fonts -->
+
+   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+
+
+     google.charts.load('current', {'packages':['corechart']});
+
+
+
+google.charts.setOnLoadCallback(grafico1);
+
+google.charts.setOnLoadCallback(grafico2);
+
+google.charts.setOnLoadCallback(grafico3);
+
+google.charts.setOnLoadCallback(grafico4);
+
+google.charts.setOnLoadCallback(grafico5);
+
+google.charts.setOnLoadCallback(grafico6);
+
+google.charts.setOnLoadCallback(grafico7);
+
+function grafico1() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Topping');
+  data.addColumn('number', 'Slices');
+  data.addRows([
+    ['Sim', 41],
+    ['Não', 28],
+  ]);
+
+  var options = {title:'Você trabalha? ',
+                 width:400,
+                 height:330};
+
+  var chart = new google.visualization.PieChart(document.getElementById('grafico1'));
+  chart.draw(data, options);
+}
+
+function grafico2() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Topping');
+  data.addColumn('number', 'Slices');
+  data.addRows([
+    ['Até 2 SM (R$2.200)', 18],
+    ['Mais que 2 até 5 SM (R$2.200 - R$5.500)', 44],
+    ['Mais que 5 até 10 SM (R$5.500 - R$11.000)', 5],
+    ['Mais que 20 SM (R$20.000)', 1],
+    ['Prefiro não responder', 1]
+  ]);
+
+  var options = {title:'Faixa de renda:',
+  width:400,
+                 height:330};
+
+  var chart = new google.visualization.PieChart(document.getElementById('grafico2'));
+  chart.draw(data, options);
+}
+function grafico3() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Estagiário', 9],
+['Autônomo', 6],
+['Não trabalho', 28],
+['Sou registrado no comércio', 13],
+['Sou registrado em empresa prestadora de serviços', 8],
+['Sou registrado em indústria (calçados/confecções/outras)', 5],
+]);
+
+var options = {title:'Vinculo com o emprego: ',
+width:400,
+                 height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico3'));
+chart.draw(data, options);
+}
+function grafico4() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Não trabalho', 28],
+['Trabalho fora da área do curso', 31],
+['Trabalho na área do curso', 10],
+
+]);
+
+var options = {title:'Qual a área do trabalho:',
+width:400,
+                 height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico4'));
+chart.draw(data, options);
+}
+function grafico5() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+  ['Não trabalho', 28],
+  ['Manhã e tarde', 22],
+  ['Tarde', 7],
+  ['Manhã', 4],
+  ['Noite', 1],
+  ['Tarde e noite', 7],
+
+
+
+]);
+
+var options = {title:'Qual seu horário de trabalho:',
+width:400,
+                 height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico5'));
+chart.draw(data, options);
+}
+
+function grafico6() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+  ['Nenhum', 65],
+  ['Um', 3],
+  ['Dois', 1],
+]);
+
+var options = {title:'Quantidade de pessoas com X filhos ou nenhum::',
+width:400,
+                 height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico6'));
+chart.draw(data, options);
+}
+function grafico7() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Pais e(ou) parentes', 60],
+['Esposa(o) e(ou) filho(s)', 8],
+['Com amigos (compartilhando despesas) ou de favor', 1],
+]);
+
+var options = {title:'Quantidade de pessoas que moram com: ',
+width:400,
+                 height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico7'));
+chart.draw(data, options);
+}
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['', 'Quantidade'],
+          ["Nenhuma (Autônomos/Não trabalham): ", 31],
+          ["EngDigital", 2],
+          ["MEL CONTABILIDADE", 1],
+          ["DASH SD: ", 2],
+          ["CCBEU: ", 1],
+          ["Magazine Luiza: ", 10],
+          ["Savegnago: ", 1],
+          ["Izzor: ", 1],
+          ["Cartonagem Circulus Indústria e Comércio: ", 1],
+          ["Gelco: ", 1],
+          ["Império das Carnes: ", 1 ],
+          ["Algar Telecom SA: ", 1],
+          ["Curtume: ", 1],
+          ["Prime Research Brazil: ", 1],
+          ["Eddydata sistema de gestao publica: ", 1],
+          ["Calçar Bem: ", 1],
+          ["Braghini soluções em informática: ", 2],
+          ["Alphasis Sistemas: ", 1],
+          ["IMA: ", 1],
+          ["OneBerto: ", 2],
+          ["CCBEU: ", 1],
+          ["Havan: ", 1],
+          ["Corebiz: ", 1],
+          ["Central Energética Vale do Sapucaí ltda: ", 1],
+          ["Sistema Metha: ", 1]
+    
+          
+        ]);
+
+        var options = {
+          title: 'Chess opening moves',
+          width: 1000,
+          legend: { position: 'none' },
+          chart: { title: 'Qual empresa você trabalha:',
+                   subtitle: '' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Quantidade'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+   </script>
+
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+ 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid top-nav">
+
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo-top page-scroll" href="#header">
+                        <img class="img-responsive"  src="img/logo.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand logo-top page-scroll" href="#header">
+                        <img class="img-responsive2"  src="img/logo2.png" alt="logo2">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden nav-buttons">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="pessoa.html">Pessoal</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="financeiro.html">Financeiro</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="educacional.html">Educacional</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="entretenimento.html">Entretenimento</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="domicilio.html">Domicílio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="conhecimento.html">Conhecimento</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="diversas.html">Diversas</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="slider">
+      <div id="myCarousel-one" class="carousel slide">
+
+
+            <div class="carousel-inner">
+                <div class="item active"> 
+                
+                    <div class="carousel-caption wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="intro-text">
+                                    <h7> Menu principal ---> </h7>
+                                    <a href="index.html"><img src="img/botaohome.png" height="100" width="100" class="button1"></a>
+                                    <h1 class="intro-lead-in animated bounceInLeft">Projeto Perfil Socioeconômico Fatec Franca 2º ciclo de ADS Matutino</h1>
+                                    
+                                    <h1 class="intro-lead-in animated bounceInLeft">Perguntas sobre a parte Financeira</h1>
+                                    
+                                 
+                                    <p class="intro-paragraph animated bounceInRight"> <i class="fa fa-hand-o-down"></i></p>
+                                </div>
+                                <a href="#services" class="page-scroll btn btn-xl slider-button animated bounceInUp">Resultados</a>
+                            </div>
+                          
+                        </div>
+                       
+                    </div>
+                    <img src="img/backgrounds/header-bg.jpg" alt="slider-image" height="100%" width="100%"/>
+
+                
+                </div>
+                  
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="services">
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading">69 ALUNOS RESPONDERAM AO QUESTIONÁRIO</h2>
+                    <h3 class="section-subheading">Passe o mouse no gráfico para mais detalhes</h3>
+                    <h3 class="section-subheading">Os resultados abaixo estão apresentados em forma gráfica para facilitar a visualização: </h3>
+                </div>
+         
+    <table class="colunas">
+  
+        <tr>
+          <td><div id="grafico1" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico2" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico3" style="border: 1px solid #ccc"></div></td>
+        </tr>
+ 
+      </table>
+      <table class="colunas">
+  
+        <tr>
+        
+          <td><div id="grafico4" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico5" style="border: 1px solid #ccc"></div></td>
+        </tr>
+ 
+      </table>
+   
+        <div id="top_x_div" style="width: 1000px; height: 500px;"></div>
+
+   
+    </section>
+    
+    <div class="scroll-up">
+        <a href="#header" class="page-scroll"><i class="fa fa-angle-up"></i></a>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Color Settings script -->
+    <script src="js/settings-script.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    
+    <!-- SmoothScroll script -->
+    <script src="js/smoothscroll.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/xBe.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <!-- Google Map -->
+    <script src="http://maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script>
+    <!-- Footer Reveal scirt -->
+    <script src="js/footer-reveal.js"></script>
+
+</body>
+
+</html>

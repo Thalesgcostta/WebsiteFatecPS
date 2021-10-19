@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <title>Pessoal</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Fonts -->
+
+   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+
+
+    google.charts.load('current', {'packages':['corechart']});
+
+
+google.charts.setOnLoadCallback(grafico1);
+
+google.charts.setOnLoadCallback(grafico2);
+
+google.charts.setOnLoadCallback(grafico3);
+
+google.charts.setOnLoadCallback(grafico4);
+
+google.charts.setOnLoadCallback(grafico5);
+
+google.charts.setOnLoadCallback(grafico6);
+
+google.charts.setOnLoadCallback(grafico7);
+
+function grafico1() {
+
+ var data = new google.visualization.DataTable();
+ data.addColumn('string', 'Topping');
+ data.addColumn('number', 'Slices');
+ data.addRows([
+   ['ADS Matutino', 35],
+   ['ADS Noturno', 34],
+ ]);
+
+ var options = {title:'Quantidade de pessoas por período do curso:',
+                width:400,
+                height:330};
+
+ var chart = new google.visualization.PieChart(document.getElementById('grafico1'));
+ chart.draw(data, options);
+}
+
+function grafico2() {
+
+ var data = new google.visualization.DataTable();
+ data.addColumn('string', 'Topping');
+ data.addColumn('number', 'Slices');
+ data.addRows([
+   ['Sempre em escola particular sem bolsa', 1],
+   ['A maior parte em escola pública', 5],
+   ['A maior parte em escola particular com bolsa', 2],
+   ['Sempre em escola publica: 61', 61],
+ ]);
+
+ var options = {title:'Na sua vida escolar você estudou:',
+ width:400,
+                height:330};
+
+ var chart = new google.visualization.PieChart(document.getElementById('grafico2'));
+ chart.draw(data, options);
+}
+function grafico3() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Não fiz', 38],
+['Sim, em uma ETEC', 16],
+['Sim, no SENAC', 4],
+['Sim, no SENAI', 8],
+['Sim, em outra instituição', 5],
+]);
+
+var options = {title:'Você fez algum curso técnico?: ',
+width:400,
+                height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico3'));
+chart.draw(data, options);
+}
+function grafico4() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Ensino superior', 11],
+['Pós graduação', 3],
+['Ensino fundamental I', 14],
+['Ensino fundamental II', 5],
+['Ensino médio', 36],
+]);
+
+var options = {title:'Grau de escolaridade do pai:',
+width:400,
+                height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico4'));
+chart.draw(data, options);
+}
+function grafico5() {
+
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Topping');
+data.addColumn('number', 'Slices');
+data.addRows([
+['Ensino superior', 11],
+['Pós graduação', 5],
+['Ensino fundamental I', 10],
+['Ensino fundamental II', 6],
+['Ensino médio', 37],
+]);
+
+var options = {title:'Grau de escolaridade da mãe:',
+width:400,
+                height:330};
+
+var chart = new google.visualization.PieChart(document.getElementById('grafico5'));
+chart.draw(data, options);
+}
+
+
+  </script>
+
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+ 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid top-nav">
+
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo-top page-scroll" href="#header">
+                        <img class="img-responsive"  src="img/logo.png" alt="logo">
+                    </a>
+                    <a class="navbar-brand logo-top page-scroll" href="#header">
+                        <img class="img-responsive2"  src="img/logo2.png" alt="logo2">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden nav-buttons">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="pessoa.html">Pessoal</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="financeiro.html">Financeiro</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="educacional.html">Educacional</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="entretenimento.html">Entretenimento</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="domicilio.html">Domicílio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="conhecimento.html">Conhecimento</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="diversas.html">Diversas</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="slider">
+      <div id="myCarousel-one" class="carousel slide">
+
+
+            <div class="carousel-inner">
+                <div class="item active"> 
+                
+                    <div class="carousel-caption wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="intro-text">
+                                    <h7> Menu principal ---> </h7>
+                                    <a href="index.html"><img src="img/botaohome.png" height="100" width="100" class="button1"></a>
+                                    <h1 class="intro-lead-in animated bounceInLeft">Projeto Perfil Socioeconômico Fatec Franca 2º ciclo de ADS Matutino</h1>
+                                    
+                                    <h1 class="intro-lead-in animated bounceInLeft">Perguntas sobre a educação</h1>
+                                    
+                                 
+                                    <p class="intro-paragraph animated bounceInRight"> <i class="fa fa-hand-o-down"></i></p>
+                                </div>
+                                <a href="#services" class="page-scroll btn btn-xl slider-button animated bounceInUp">Resultados</a>
+                            </div>
+                          
+                        </div>
+                       
+                    </div>
+                    <img src="img/backgrounds/header-bg.jpg" alt="slider-image" height="100%" width="100%"/>
+
+                
+                </div>
+                  
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="services">
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading">69 ALUNOS RESPONDERAM AO QUESTIONÁRIO</h2>
+                    <h3 class="section-subheading">Passe o mouse no gráfico para mais detalhes</h3>
+                    <h3 class="section-subheading">Os resultados abaixo estão apresentados em forma gráfica para facilitar a visualização: </h3>
+                </div>
+         
+    <table class="colunas">
+  
+        <tr>
+          <td><div id="grafico1" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico2" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico3" style="border: 1px solid #ccc"></div></td>
+        </tr>
+ 
+      </table>
+      <table class="colunas">
+  
+        <tr>
+        
+          <td><div id="grafico4" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico5" style="border: 1px solid #ccc"></div></td>
+          <td><div id="grafico6" style="border: 1px solid #ccc"></div></td>
+        </tr>
+ 
+      </table>
+      <table class="colunas">
+  
+        <tr>
+        
+          <td><div id="grafico7" style="border: 1px solid #ccc"></div></td>
+        </tr>
+ 
+      </table>
+    </section>
+
+    <div class="scroll-up">
+        <a href="#header" class="page-scroll"><i class="fa fa-angle-up"></i></a>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Color Settings script -->
+    <script src="js/settings-script.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    
+    <!-- SmoothScroll script -->
+    <script src="js/smoothscroll.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/xBe.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <!-- Google Map -->
+    <script src="http://maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script>
+    <!-- Footer Reveal scirt -->
+    <script src="js/footer-reveal.js"></script>
+
+</body>
+
+</html>
